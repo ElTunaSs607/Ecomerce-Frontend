@@ -4,7 +4,39 @@
 
 
 
-body{
-    background-color: #2b1212;
-    color: white;
+/* Estilos base */
+body {
+    font-size: 16px; /* Establece un tamaño de fuente base */
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    color: aliceblue;
+    background-image: url('https://wallpaper.forfun.com/fetch/d6/d6ae07fd618ea557fb5ddbf5277c8750.jpeg')
+
+    
 }
+
+.container {
+    width: 90%; /* Utiliza porcentajes para hacer que el contenedor sea flexible */
+    max-width: 1200px; /* Establece un ancho máximo para evitar que el contenido se extienda demasiado en pantallas grandes */
+    margin: 0 auto; /* Centra el contenedor horizontalmente */
+    padding: 0 20px; /* Agrega relleno en los lados para dar espacio al contenido */
+}
+
+/* Estilos específicos para dispositivos pequeños */
+@media screen and (max-width: 768px) {
+    .container {
+        width: 100%; /* En dispositivos pequeños, el contenedor ocupa todo el ancho disponible */
+        padding: 0 10px; /* Reduce el relleno lateral */
+    }
+}
+
+/* Estilos para los elementos que deben ser flexibles */
+.flex-container {
+    display: flex;
+    justify-content: space-between; /* Espacio uniforme entre los elementos */
+    align-items: center; /* Centra verticalmente los elementos */
+}
+
+/* Otros estilos para los elementos responsivos */
